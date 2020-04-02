@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Diagnostics;
+//using System.Threading;
 
 namespace IBubbleSort
 {
     class Program
     {
-        public class Data
+        public abstract class Data
         {
-            public void Swap(int i, int j)
+            public virtual void Swap(int i, int j)
             {
                 int temp = a[i];
                 a[i] = a[j];
@@ -14,13 +16,32 @@ namespace IBubbleSort
 
             }
             public int[] a = new int[10] { 3, 0, 1, 8, 7, 2, 5, 4, 6, 9 };
+            //public int[] a = new int[10];
+            //for(m=0;m<=a.Length;m++)
+            //    {
+            //    a[m]=random.Next(0, 100);
+            //    }
+
+
+        }
+        public class Childrens:Data 
+        {
+            public override void Swap(int i, int j)
+            {
+                int temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+
+            }
         }
 
         static void Main(string[] args)
         {
-            Data Ex = new Data();
+            Childrens Ex = new Childrens();
+            Stopwatch sw = new Stopwatch();
 
-            DateTime DT = DateTime.Now;
+            sw.Start();
+
             int swap = 0;
             //выведем на экран исходный массив
             for (int i = 0; i < Ex.a.Length; i++)
@@ -37,18 +58,17 @@ namespace IBubbleSort
                     if (swap == 0)
                     break;
                 }
-                //выводим результат массив
+            //выводим результат массив
             Console.WriteLine();
 
             for (int i = 0; i < Ex.a.Length; i++)
-                Console.Write(Ex.a[i] + ", ");
-
-            //Dim sw = new Stopwatch();
-            //sw.Start();
-            //sw.Stop();
-            //Console.WriteLine(sw.Elapsed.ToString());
-            DateTime LT=DateTime.Now;
-            Console.WriteLine(Convert.ToString((LT)- (DT)));
+            Console.Write(Ex.a[i] + ", ");
+  
+            TimeSpan ts = sw.Elapsed;
+            string elapsedTime = String.Format("{0:00}:{1:00}:{2:00}.{3:00}",
+            ts.Hours, ts.Minutes, ts.Seconds,
+            ts.Milliseconds / 10);
+            Console.WriteLine("RunTime " + elapsedTime);
         }
     }
 }
