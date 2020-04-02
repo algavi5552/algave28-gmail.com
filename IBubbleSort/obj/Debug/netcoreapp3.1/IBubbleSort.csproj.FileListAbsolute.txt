@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\IBubbleSort\bin\Debug\netcoreapp3.1\IBubbleSort.exe
+C:\Users\Admin\source\repos\IBubbleSort\bin\Debug\netcoreapp3.1\IBubbleSort.deps.json
+C:\Users\Admin\source\repos\IBubbleSort\bin\Debug\netcoreapp3.1\IBubbleSort.runtimeconfig.json
+C:\Users\Admin\source\repos\IBubbleSort\bin\Debug\netcoreapp3.1\IBubbleSort.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\IBubbleSort\bin\Debug\netcoreapp3.1\IBubbleSort.dll
+C:\Users\Admin\source\repos\IBubbleSort\bin\Debug\netcoreapp3.1\IBubbleSort.pdb
+C:\Users\Admin\source\repos\IBubbleSort\obj\Debug\netcoreapp3.1\IBubbleSort.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\IBubbleSort\obj\Debug\netcoreapp3.1\IBubbleSort.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\IBubbleSort\obj\Debug\netcoreapp3.1\IBubbleSort.AssemblyInfo.cs
+C:\Users\Admin\source\repos\IBubbleSort\obj\Debug\netcoreapp3.1\IBubbleSort.dll
+C:\Users\Admin\source\repos\IBubbleSort\obj\Debug\netcoreapp3.1\IBubbleSort.pdb
